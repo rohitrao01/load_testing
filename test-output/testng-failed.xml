@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" allow-return-values="true">
+  <listeners>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="ApiTesting(failed)">
+    <classes>
+      <class name="draup.token_gen">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- draup.token_gen -->
+    </classes>
+  </test> <!-- ApiTesting(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -1,0 +1,97 @@
+
+1. vertical
+
+fil1 = {"verticals":["Automotive"]}
+pag1 = {"offset":0,"limit":12}
+path1 = executives[0]
+data1 = executive_id:1, executive_logo_url:https://media.licdn.com/media/p/4/000/167/1ae/1e8152e.jpg, deal_size_influence:HIGH, location_class:Hub, bio:CTO of company, executive_name:Kevin Jose, linkedin_handle:KevinL, opportunity_index_rating:9.0, twitter_handle:KevinT, rank2:1, business_units:[SUV, Driverless Cars, GM Loyalty], level_in_org:2, rank:1, account_logo_url:https://lh4.googleusercontent.com/-oJZOGsYNQAM/AAAAAAAAAAI/AAAAAAAAmM8/9tTL-b-acSQ/photo.jpg, location:Leonberg, level_in_org_grade:2, subverticals:[Security Software, Tyres], level_in_org_designation:C-Officers, account:General Motors
+
+-------------------------------------------
+
+2. subverticals
+
+fil2 = {"subverticals":["ADAS"]}
+pag2 = {"offset":0,"limit":12}
+path2 = executives[0]
+data2 = executive_id:2, executive_logo_url:https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/09f/1a4/3498e76.jpg, deal_size_influence:LOW, location_class:Satellite, bio:CTO of company and SVP of FMC, executive_name:Achal Gupta, linkedin_handle:AchalL, opportunity_index_rating:8.0, twitter_handle:AchalT, rank2:3, business_units:[CLOUD AND ENTERPRISES], level_in_org:1, rank:1, account_logo_url:https://lh4.googleusercontent.com/-uq0rXQ8JpGQ/AAAAAAAAAAI/AAAAAAAAd44/v_F3RWZrup0/s0-c-k-no-ns/photo.jpg, location:Arcadia, level_in_org_grade:1, subverticals:[OEM, ADAS], level_in_org_designation:CEO, account:Ford Motor Company
+--------------------------------------------
+
+3. company
+
+fil3 = {"company":["BMW"]}
+pag3 = {"offset":0,"limit":12}
+path3 = executives[0]
+data3 = executive_id:3, executive_logo_url:https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ffortunedotcom.files.wordpress.com%2F2017%2F07%2F512372480.jpg&w=700&q=85, deal_size_influence:MEDIUM, location_class:Headquarter, bio:CTO of company and SVP of BMW, executive_name:Matty Reglar, linkedin_handle:MattyL, opportunity_index_rating:6.0, twitter_handle:MAttyT, rank2:2, business_units:[WINDOWS AND DEVICES], level_in_org:3, rank:2, account_logo_url:https://lh4.googleusercontent.com/--zjef7_gdzQ/AAAAAAAAAAI/AAAAAAABwBM/GH6NJAf9npY/photo.jpg, location:Austria, level_in_org_grade:3, subverticals:[Network Software, Security Software], level_in_org_designation:Senior Leadership, account:BMW
+---------------------------------------------
+
+4. business_function
+
+fil4 = {"business_functions":["Technology"]}
+pag4 = {"offset":0,"limit":12}
+path4 = executives[0]
+data4 = executive_id:20, executive_logo_url:http://static4.businessinsider.com/image/587ea575f10a9a283f8b61a1-480/docusign-ceo-daniel-springer.jpg, deal_size_influence:LOW, location_class:Satellite, bio:CTO of company and SVP of Johnson Controls, executive_name:Dottie Shepley, linkedin_handle:KevinL, opportunity_index_rating:10.0, twitter_handle:KevinT, rank2:3, business_units:[Office Products, LinkedIn, Skype], level_in_org:3, rank:1, account_logo_url:https://lh4.googleusercontent.com/--zjef7_gdzQ/AAAAAAAAAAI/AAAAAAABwBM/GH6NJAf9npY/photo.jpg, location:Leonberg, level_in_org_grade:3, subverticals:[Powertrain, Tyres], level_in_org_designation:Senior Leadership, account:Johnson Controls
+----------------------------------------------
+
+5. locations()
+
+fil5 = {"locations":["APAC"]}
+pag5 = {"offset":0,"limit":12}
+path5 = executives[0]
+data5 = executive_id:13, executive_logo_url:http://www.lorenzanoandyannes.com/wp-content/uploads/2010/09/CEO.jpg, deal_size_influence:HIGH, location_class:Satellite, bio:CTO of company and SVP of Delphi Automotive, executive_name:Carlos Tavares, linkedin_handle:KevinL, opportunity_index_rating:9.0, twitter_handle:KevinT, rank2:1, business_units:[Office Products, LinkedIn, Skype], level_in_org:2, rank:1, account_logo_url:https://lh4.googleusercontent.com/--zjef7_gdzQ/AAAAAAAAAAI/AAAAAAABwBM/GH6NJAf9npY/photo.jpg, location:Suita, level_in_org_grade:2, subverticals:[Media Development Software, Tyres], level_in_org_designation:C-Officers, account:Delphi Automotive
+-----------------------------------------------
+
+6. level_in_org()
+
+fil6 = {"level_in_org":["CEO"]}
+pag6 = {"offset":0,"limit":12}
+path6 = executives[0]
+data6 = executive_id:2, executive_logo_url:https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/09f/1a4/3498e76.jpg, deal_size_influence:LOW, location_class:Satellite, bio:CTO of company and SVP of FMC, executive_name:Achal Gupta, linkedin_handle:AchalL, opportunity_index_rating:8.0, twitter_handle:AchalT, rank2:3, business_units:[CLOUD AND ENTERPRISES], level_in_org:1, rank:1, account_logo_url:https://lh4.googleusercontent.com/-uq0rXQ8JpGQ/AAAAAAAAAAI/AAAAAAAAd44/v_F3RWZrup0/s0-c-k-no-ns/photo.jpg, location:Arcadia, level_in_org_grade:1, subverticals:[OEM, ADAS], level_in_org_designation:CEO, account:Ford Motor Company
+------------------------------------------------
+
+7. opportunity_index
+
+fil7 = {"opportunity_index_rating":{"min":9,"max":10}}
+pag7 = {"offset":0,"limit":12}
+path7 = executives[0]
+data7 = executive_id:20, executive_logo_url:http://static4.businessinsider.com/image/587ea575f10a9a283f8b61a1-480/docusign-ceo-daniel-springer.jpg, deal_size_influence:LOW, location_class:Satellite, bio:CTO of company and SVP of Johnson Controls, executive_name:Dottie Shepley, linkedin_handle:KevinL, opportunity_index_rating:10.0, twitter_handle:KevinT, rank2:3, business_units:[Office Products, LinkedIn, Skype], level_in_org:3, rank:1, account_logo_url:https://lh4.googleusercontent.com/--zjef7_gdzQ/AAAAAAAAAAI/AAAAAAABwBM/GH6NJAf9npY/photo.jpg, location:Leonberg, level_in_org_grade:3, subverticals:[Powertrain, Tyres], level_in_org_designation:Senior Leadership, account:Johnson Controls
+------------------------------------------------
+
+8. deal_size_influence
+
+fil8 =  {"deal_size_influence":["MEDIUM"]}
+pag8 = {"offset":0,"limit":12}
+path8 = executives[0]
+data8 = executive_id:15, executive_logo_url:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn0PDSjisbiTDV1b3nkviFIJ24QUhlH4c2DvaQIK-_1CgBzRLq, deal_size_influence:MEDIUM, location_class:Outpost, bio:CTO of company and SVP of Mazda, executive_name:Dr. Stefan Somme, linkedin_handle:KevinL, opportunity_index_rating:8.0, twitter_handle:KevinT, rank2:2, business_units:[Office Products, LinkedIn, Skype], level_in_org:2, rank:1, account_logo_url:https://lh4.googleusercontent.com/--zjef7_gdzQ/AAAAAAAAAAI/AAAAAAABwBM/GH6NJAf9npY/photo.jpg, location:Sakura, level_in_org_grade:2, subverticals:[Internet-Enabled Consumer Services, Tyres], level_in_org_designation:C-Officers, account:Mazda
+----------------------------------------------
+
+9. verticals_with_others1
+
+
+fil9 = {"verticals":["Automotive","Consumer Software"],"subverticals":["Chassis"]}
+pag9 = {"offset":0,"limit":12}
+path9 = executives[0]
+data9 = executive_id:5, executive_logo_url:http://www.un-ceo.com/wp-content/uploads/2017/04/730x350xmikeohed0716-6083-e1493003307622-730x350.jpg.pagespeed.ic.cfo8Zrbg6d.jpg, deal_size_influence:LOW, location_class:Satellite, bio:SVP of Nissan, executive_name:Sreeraj, linkedin_handle:SreerajL, opportunity_index_rating:5.0, twitter_handle:SreerajT, rank2:3, business_units:[LINKEDIN], level_in_org:2, rank:2, account_logo_url:https://lh4.googleusercontent.com/--zjef7_gdzQ/AAAAAAAAAAI/AAAAAAABwBM/GH6NJAf9npY/photo.jpg, location:Echizen, level_in_org_grade:2, subverticals:[Powertrain, Chassis], level_in_org_designation:C-Officers, account:Nissan
+-----------------------------------------------
+
+10. verticals_with_others2
+
+fil10 = {"verticals":["Enterprise Software"],"company":["Aisin Seiki"],"level_in_org":["CEO"]}
+pag10 = {"offset":0,"limit":12}
+path10 = executives[0]
+data10 = executive_id:12, executive_logo_url:https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkaAAAAJGExOTRkNDcwLWQxMmQtNGNiZS04MzNlLWVlYTI0NmM2NjhmOQ.jpg, deal_size_influence:MEDIUM, location_class:Hub, bio:CTO of company and SVP of Aisin Seiki, executive_name:Dr. Karlheinz Blessing, linkedin_handle:KevinL, opportunity_index_rating:5.0, twitter_handle:KevinT, rank2:2, business_units:[Office Products, LinkedIn, Skype], level_in_org:1, rank:2, account_logo_url:https://lh4.googleusercontent.com/--zjef7_gdzQ/AAAAAAAAAAI/AAAAAAABwBM/GH6NJAf9npY/photo.jpg, location:Wilton, level_in_org_grade:1, subverticals:[System Software, Tyres], level_in_org_designation:CEO, account:Aisin Seiki
+-----------------------------------------------
+
+11. deal_size_influence_with_others
+
+fil11 = {"level_in_org":["Senior Leadership"],"deal_size_influence":["LOW"]}
+pag11 = {"offset":0,"limit":12}
+path11 = executives[0]
+data11 = executive_id:20, executive_logo_url:http://static4.businessinsider.com/image/587ea575f10a9a283f8b61a1-480/docusign-ceo-daniel-springer.jpg, deal_size_influence:LOW, location_class:Satellite, bio:CTO of company and SVP of Johnson Controls, executive_name:Dottie Shepley, linkedin_handle:KevinL, opportunity_index_rating:10.0, twitter_handle:KevinT, rank2:3, business_units:[Office Products, LinkedIn, Skype], level_in_org:3, rank:1, account_logo_url:https://lh4.googleusercontent.com/--zjef7_gdzQ/AAAAAAAAAAI/AAAAAAABwBM/GH6NJAf9npY/photo.jpg, location:Leonberg, level_in_org_grade:3, subverticals:[Powertrain, Tyres], level_in_org_designation:Senior Leadership, account:Johnson Controls
+-----------------------------------------------
+
+12. rol_fil_combination()
+
+fil12 = {"company":["Daimler AG","Continental AG","BYD Auto"],"opportunity_index_rating":{"min":3,"max":10},"level_in_org":["CEO"],"deal_size_influence":["MEDIUM"]}
+pag12 = {"offset":0,"limit":12}
+path12 = executives[0]
+data12 = executive_id:4, executive_logo_url:https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANMAAAAJGUzM2Q0Mzk4LWU2NGItNGRjNy04MDU3LTUzZGEyNjc5ZDRkYQ.jpg, deal_size_influence:MEDIUM, location_class:Hub, bio:CTO of company and SVP of Daimler AG, executive_name:Anselma Sanpher, linkedin_handle:AnselmaL, opportunity_index_rating:3.0, twitter_handle:AnselmaT, rank2:2, business_units:[ARTIFICIAL INTELLIGENCE & RESEARCH], level_in_org:1, rank:3, account_logo_url:https://i.ytimg.com/vi/4u8w-LPWAxs/maxresdefault.jpg, location:Avezzano, level_in_org_grade:1, subverticals:[Social Applications], level_in_org_designation:CEO, account:Daimler AG

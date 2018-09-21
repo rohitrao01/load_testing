@@ -1,0 +1,301 @@
+base_url = https://qa-platform.draup.com
+res_common = service/universe/opportunities/_all/
+-------------------------------------------------------------------------
+
+1. verticals (filter option - Consumer Sofftware , Enterprise Software , Automotive)
+
+ver_fil = {\"verticals\":[\"Consumer Software\",\"Enterprise Software\"]}
+ver_pag = {\"offset\":0,\"limit\":25}
+ver_path = rowData
+data1 = 
+data2 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+---------------------
+
+2. subverticals 
+
+sub_filter = {\"subverticals\":[\"ADAS\",\"Application Development Software\"]}
+sub_pagination = {\"offset\":0,\"limit\":25}
+sub_path = rowData
+data3 = Sumitomo Rubber Industries,SAIC Motor,Nissan,Daimler AG,BMW,Ford Motor Company
+data4 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+----------------------
+
+3. service_provider_partner
+
+ser_filter = {\"partners\":[\"HCL\"]}
+ser_pagination = {\"offset\":0,\"limit\":25}
+ser_path = rowData
+data5 = [37, false, Paccar, 7.6, 1.2, 6.4, 0, 0, 0, 1, 1, 0, 0]
+data6 = Paccar,Continental AG,Honda,Takata Corporation,Nissan,BYD Auto,Suzuki,Volvo,Delphi Automotive,Aisin Seiki,Hella,Johnson Controls,Yamaha Motor Company
+----------------------
+
+4. R&D Location
+
+rnd_filter = {\"rnd_locations\":[\"APAC\"]}
+rnd_pagination = {\"offset\":0,\"limit\":25}
+rnd_path = rowData
+data7 = Sumitomo Rubber Industries,Volkswagen Group,Bridgestone,Hyundai Motor Group,SAIC Motor,Valeo,Continental AG,Renault,Paccar,Takata Corporation,Honda,Denso,Michelin,Nissan,Mazda,Koito Manufacturing,Magneti Marelli,BYD Auto,Daimler AG,Suzuki,BMW,Delphi Automotive,Volvo,Hella,Aisin Seiki
+data8 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+----------------------
+
+5. HQ_location
+
+hq_filter = {\"hq_locations\":[\"APAC\"]}
+hq_pagination = {\"offset\":0,\"limit\":25}
+hq_path = rowData
+data9 = [17, false, Valeo, 7.8, 1.2, 6.6, 0, 0, 0, 1, 1, 0, 0]
+data10 = Valeo,Honda,Takata Corporation,Denso,Nissan,Mazda,Koito Manufacturing,BYD Auto
+---------------------
+
+6. Outsourcing_size()]
+
+out_filter = {\"outsourcing_size\":{\"min\":0,\"max\":100}}
+out_pagination = {\"offset\":0,\"limit\":25}
+out_path = rowData
+data11 = Nissan,BMW
+data12 = [5, false, Nissan, 5.8, 1.2, 4.6, 0, 0, 0, 1, 0, 0, 0]
+----------------------
+
+7. opportunity_index
+
+opp_filter = {"opidx":{"min":4,"max":10}}
+opp_pagination = {"offset":0,"limit":25}
+opp_path = rowData
+data13 = Kia Motors,Sumitomo Rubber Industries,Volkswagen Group,Bridgestone,Hyundai Motor Group,SAIC Motor,Valeo,Paccar,Renault,Continental AG,Honda,Takata Corporation,Denso,Michelin,Nissan,Mazda,Koito Manufacturing,BYD Auto,Magneti Marelli,Daimler AG,Suzuki
+data14 = [9, false, Kia Motors, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+----------------------
+
+8. revenue
+
+rev_filter = {"revenue":{"min":0,"max":10000000}}
+rev_pagination = {"offset":0,"limit":25}
+rev_path = rowData
+data15 = Sumitomo Rubber Industries,Volkswagen Group,Bridgestone,Kia Motors,Hyundai Motor Group,SAIC Motor,Valeo,Renault,Paccar,Continental AG,Takata Corporation,Honda,Denso,Michelin,Nissan,Mazda,Koito Manufacturing,Magneti Marelli,BYD Auto,Daimler AG,Suzuki,BMW,Delphi Automotive,Volvo,Hella
+data16 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+----------------------
+
+9. employees
+
+emp_filter = {"headcount":{"min":0,"max":1000}}
+emp_pagination = {"offset":0,"limit":25}
+emp_path = rowData
+data17 = BMW
+data18 = [3, false, BMW, 3.7, 1.2, 2.5, 0, 0, 0, 1, 1, 0, 0]
+-----------------------
+
+10. signals
+
+sig_filter = {"signal_types":["Executive Movement"]}
+sig_pagination = {"offset":0,"limit":25}
+sig_path = rowData
+data19 = Sumitomo Rubber Industries,Kia Motors,Bridgestone,Volkswagen Group,Hyundai Motor Group,SAIC Motor,Valeo,Renault,Paccar,Continental AG,Takata Corporation,Honda,Denso,Mazda,Koito Manufacturing,BYD Auto,Magneti Marelli,Daimler AG,Suzuki,BMW,Volvo,Johnson Controls,Aisin Seiki,Hella,Hyundai Motor Company
+data20 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+-----------------------
+
+11. vertcials_with_others
+
+fil1 = {"verticals":["Consumer Software","Enterprise Software"],"subverticals":["ADAS","Application Development Software"]}
+pag1 = {"offset":0,"limit":25}
+fil_path1 = rowData
+data_fil1 = Sumitomo Rubber Industries,SAIC Motor,Daimler AG,Ford Motor Company
+data_fil2 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+-------------------------------
+
+12. vertcials_with_others1
+
+fil2 = {"verticals":["Consumer Software","Enterprise Software"],"partners":["HCL","Infosys","TCS"]}
+pag2 = {"offset":0,"limit":25}
+fil_path2 = rowData
+data_fil3 = Sumitomo Rubber Industries,Continental AG,Takata Corporation,Daimler AG,Suzuki,Volvo,Delphi Automotive,Hella,Johnson Controls,Aisin Seiki,Hyundai Mobis,Yamaha Motor Company
+data_fil4 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+--------------------------------
+
+13. verticals_with_others2
+
+fil3 = {"verticals":["Consumer Software","Enterprise Software"],"rnd_locations":["APAC","Ahmedabad","Arcadia","Austria","Avezzano"]}
+pag3 = {"offset":0,"limit":25}
+fil_path3 = rowData
+data_fil5 = Sumitomo Rubber Industries,Volkswagen Group,Kia Motors,Bridgestone,Hyundai Motor Group,SAIC Motor,Valeo,Renault,Continental AG,Takata Corporation,Michelin,Mazda,Koito Manufacturing,Daimler AG,Suzuki,Delphi Automotive,Volvo,Johnson Controls,Aisin Seiki,Hella,Ford Motor Company,Yamaha Motor Company,Hyundai Motor Company,Hyundai Mobis
+data_fil6 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+---------------------------------
+
+14. sub
+
+fil4 = {"subverticals":["Application Development Software","ADAS"],"rnd_locations":["Ahmedabad"]}
+pag4 = {"offset":0,"limit":25}
+fil_path4 = rowData
+data_fil96 = Sumitomo Rubber Industries,SAIC Motor,Nissan,Daimler AG,BMW,Ford Motor Company
+data_fil7 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+---------------------------------
+
+15 . sub
+
+fil5 = {"subverticals":["Data Storage Systems","E-Commerce Consumer Applications"],"outsourcing_size":{"min":0,"max":100},"rnd_locations":["APAC"]}
+pag5 = {"offset":0,"limit":25}
+fil_path5 = rowData
+data_fil8 = Nissan
+data_fil9 = [5, false, Nissan, 5.8, 1.2, 4.6, 0, 0, 0, 1, 0, 0, 0]
+----------------------------------
+
+16. sub
+
+fil6 = {"subverticals":["Integration and Orchestration Middleware","Infotainment Systems"],"revenue":{"min":0,"max":10000000}}
+pag6 = {"offset":0,"limit":25}
+fil_path6 = rowData
+data_fil10 = Sumitomo Rubber Industries,Daimler AG,BMW,Ford Motor Company,Yamaha Motor Company
+data_fil11 = [39, false, Sumitomo Rubber Industries, 9.6, 1.2, 8.4, 0, 0, 0, 1, 1, 0, 0]
+-----------------------------------
+
+17. service
+
+fil7 = {"partners":["TCS","Wipro"],"outsourcing_size":{"min":0,"max":100}}
+pag7 = {"offset":0,"limit":25}
+fil_path7 = rowData
+data_fil12 = Nissan,BMW
+data_fil133 = [5, false, Nissan, 5.8, 1.2, 4.6, 0, 0, 0, 1, 0, 0, 0]
+-----------------------------------
+
+18. service
+
+fil8 = {"partners":["HCL","Infosys","TCS","Wipro"],"opidx":{"min":3,"max":10},"headcount":{"min":0,"max":1000}}
+pag8 = {"offset":0,"limit":25}
+fil_path8 = rowData
+data_fil13 = BMW
+data_fil14 = [3, false, BMW, 3.7, 1.2, 2.5, 0, 0, 0, 1, 1, 0, 0]
+-----------------------------------
+
+19. service
+
+fil9 = {"partners":["TCS","Wipro"],"opidx":{"min":0,"max":6},"subverticals":["Enterprise Resource Management Applications"]}
+pag9 = {"offset":0,"limit":25}
+fil_path9 = rowData
+data_fil15 = BYD Auto,Suzuki,Delphi Automotive,Johnson Controls,Aisin Seiki,Hella,Hyundai Mobis,Yamaha Motor Company
+data_fil16 = [24, false, BYD Auto, 4.6, 1.2, 3.4, 0, 0, 0, 1, 1, 0, 0]
+------------------------------------
+
+20. r&d_location
+
+fil10 = {"rnd_locations":["Austria","Arcadia","Ahmedabad"],"outsourcing_size":{"min":0,"max":100}}
+pag10 = {"offset":0,"limit":25}
+fil_path10 = rowData
+data_fil17 = Nissan,BMW
+data_fil18 = [5, false, Nissan, 5.8, 1.2, 4.6, 0, 0, 0, 1, 0, 0, 0]
+--------------------------------------
+
+21. r&d_location
+
+fil11 = {"rnd_locations":["Ahmedabad","Avezzano","Beijing Area"],"signal_types":["Hiring","Investment"]}
+pag11 = {"offset":0,"limit":25}
+fil_path11 = rowData
+data_fil19 = Sumitomo Rubber Industries,Kia Motors,Bridgestone,Volkswagen Group,SAIC Motor,Valeo,Continental AG,Paccar,Michelin,Honda,Takata Corporation,Nissan,Koito Manufacturing,Mazda,Daimler AG,Suzuki,Magneti Marelli,BYD Auto,Delphi Automotive,Volvo,BMW,Ford Motor Company,Aisin Seiki,Johnson Controls,Hella
+data_fil20 = 
+---------------------------------------
+
+22. r&d_location
+
+fil12 = 
+pag12 = 
+fil_path12 = 
+data_fil21 = 
+data_fil22 = 
+--------------------------------------
+
+23. hq_location
+
+fil13 = 
+pag13 = 
+fil_path13 = 
+data_fil23 = 
+data_fil24 = 
+---------------------------------------
+
+24. hq_location
+
+fil14 = 
+pag14 = 
+fil_path14 = 
+data_fil25 = 
+data_fil26 = 
+---------------------------------------
+
+25. hq_location
+
+fil15 = 
+pag15 = 
+fil_path15 = 
+data_fil27 = 
+data_fil28 = 
+---------------------------------------
+
+26. outsourcing_size
+
+fil16 = 
+pag16 = 
+fil_path16 = 
+data_fil29 =
+data_fil30 =
+--------------------------------------
+
+27. outsourcing_size
+
+fil17 = 
+pag17 = 
+fil_path17 = 
+data_fil31 = 
+data_fil32 = 
+--------------------------------------
+28. outsourcing_size
+
+fil18 = 
+pag18 = 
+fil_path18 = 
+data_fil33 = 
+data_fil34 = 
+-------------------------------------
+
+29. opp_index
+
+fil19 = 
+pag19 = 
+fil_path19 = 
+data_fil35 = 
+data_fil36 = 
+--------------------------------------
+
+30. opp_index
+
+fil20 = 
+pag20 = 
+fil_path20 = 
+data_fil37 = 
+data_fil38 = 
+--------------------------------------
+
+31. opp_index
+
+fil21 = 
+pag21 = 
+fil_path21 = 
+data_fil39 = 
+data_fil40 = 
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

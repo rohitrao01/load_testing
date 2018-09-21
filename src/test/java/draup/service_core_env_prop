@@ -1,0 +1,136 @@
+base_url = https://qa-platform.draup.com
+resource = service/core/
+----------------------------
+
+1. service_core_context()
+
+query1 = contexts/?limit=1&offset=0
+path1 = results[0]
+data1 = context:Engineering Services, verticals:['Automotive', 'Consumer Software', 'Enterprise Software'], created_by:draup, url:https://dev-platform.draup.com/service/core/contexts/1/]
+-----------------------------
+
+2. service_core_context_id
+
+query2 = contexts/1
+path2 = 
+data2 = context:Engineering Services, verticals:['Automotive', 'Consumer Software', 'Enterprise Software'], created_by:draup, url:https://dev-platform.draup.com/service/core/contexts/1/
+----------------------------
+
+3. service_core_footnotes()
+
+query3 = footnotes/?limit=1&offset=0
+path3 = results[0]
+data3 = context:Engineering Services, link:[list:[], title:], language:en, title:, created_by:admin, url:https://dev-platform.draup.com/service/core/footnotes/0/, key:Default
+----------------------------
+
+4. service_core_footnote_id
+
+query4 = footnotes/1/
+path4 = title
+data4 = Universe Overview
+---------------------------
+
+5. service_core_label
+
+query5 = labels/?limit=1&offset=0
+path5 = results[0]
+data5 = icon:view-files.svg, en:Overview, contexts:[Context:Engineering Services, Digital Services, Digital Products], fr:fr, url:https://dev-platform.draup.com/service/core/labels/1/, key:overview, group:application
+---------------------------
+
+6. service_core_label_group
+
+query6 = labels/groups/
+path6 = 
+data6 = application, application new
+---------------------------
+
+7. service_core_label_id()
+
+query7 = labels/1/
+path7 = contexts
+data7 = Context:Engineering Services, Digital Services, Digital Products
+----------------------------
+
+8. service_core_page()
+
+query8 = pages/
+path8 = 
+data8 = Contenders:[Landing Page:[Comparison:[:]]], Insights:[Landscape:[:], Signals:[:]], Universe:[Results:[:], Account Profile:[Globalization:[R&D:[:]], Financials:[:], Hiring:[Hiring Activity:[:], Executive Movement:[:]], Partnerships:[Acquisitions:[:], Company Partnerships:[:], Investments:[:], Joint Ventures:[:]], Overview:[:], Outsourcing:[Analysis:[:], Accounts Data:[:]], Signals:[:], Key Executives:[:]]], Metacoach:[:], Rolodex:[Executive Profile:[:], Landing Page:[Comparison:[:]]], Braindesk:[:]
+-----------------------------
+
+9. service_core_page_all
+
+query9 = pages/all/
+path9 = path
+data9 = /Insights/Landscape, /Insights/Signals, /Universe/Results, /Universe/Account Profile/Overview, /Universe/Account Profile/Financials, /Universe/Account Profile/Globalization/R&D, /Universe/Account Profile/Globalization/R&D, /Universe/Account Profile/Outsourcing/Analysis, /Universe/Account Profile/Outsourcing/Accounts Data, /Universe/Account Profile/Signals, /Universe/Account Profile/Partnerships/Investments, /Universe/Account Profile/Partnerships/Acquisitions, /Universe/Account Profile/Partnerships/Company Partnerships, /Universe/Account Profile/Partnerships/Joint Ventures, /Universe/Account Profile/Hiring/Hiring Activity, /Universe/Account Profile/Hiring/Hiring Activity, /Universe/Account Profile/Hiring/Executive Movement, /Universe/Account Profile/Key Executives, /Rolodex/Landing Page/Comparison, /Rolodex/Executive Profile, /Contenders/Landing Page/Comparison, /Metacoach, /Braindesk
+----------------------------
+
+10. service_core_settings 
+
+query10 = settings/?limit=1&offset=0
+path10 = 
+data10 = count:0
+----------------------------
+
+11. service_core_subverticals
+
+query11 = subverticals/?limit=1&offset=0
+path11 = results[0]
+data11 = created_by:draup, url:https://dev-platform.draup.com/service/core/subverticals/1/, subvertical_name:Component Manufacturer / Tier 1
+----------------------------
+
+12. service_core_subvertical_id
+
+query12 = subverticals/1/
+path12 = 
+data12 = created_by:draup, url:https://dev-platform.draup.com/service/core/subverticals/1/, subvertical_name:Component Manufacturer / Tier 1
+----------------------------
+
+13. service_core_tabledefs
+
+query13 = tabledefs/?limit=1&offset=0
+path13 = results[0]
+data13 = defSortType:DESC, sqlString:SELECT investment_date, invested_account, invested_subverticals, investment_type, invested_locations, currency||' '||to_char(amount, 'FM999,999,999D')||' Mn', round, partner_accounts, amount, __COUNT_QUERY__  FROM draup.account_investments WHERE account_id=__PK__, columndefsJson:[[comparator:dateComparator, headerName:investment_date, field:investment_date, width:110], [headerName:invested_account, field:invested_account, width:120], [headerName:invested_subverticals, field:invested_subverticals, width:240], [headerName:investment_type, field:investment_type, width:130], [headerName:invested_locations, field:invested_locations, width:150], [comparator:numberComparator, headerName:amount, field:amount, width:135], [headerName:round, field:round, width:85], [headerName:partner_accounts, field:partner_accounts, width:130], [comparator:numberComparator, hide:true, headerName:nonjsonamountforsort, field:nonjsonamountforsort]], name:ACCOUNTS_PARTNERS_INVESTMENTS, url:https://dev-platform.draup.com/service/core/tabledefs/1/, defSortField:investment_date DESC
+----------------------------
+
+14.  service_core_tabledefs_id
+
+query14 = tabledefs/1/
+path14 = sqlString
+data14 = SELECT investment_date, invested_account, invested_subverticals, investment_type, invested_locations, currency||' '||to_char(amount, 'FM999,999,999D')||' Mn', round, partner_accounts, amount, __COUNT_QUERY__  FROM draup.account_investments WHERE account_id=__PK__
+---------------------------
+
+15. service_core_userprofile()
+
+query15 = userprofiles/?limit=1&offset=0
+path15 = results[0]
+data15 = default_location:Bangalore, default_context:1, current_context:2, language:en, id:3, default_currency:USD, job_title:draup user, user:3, account:49
+----------------------------
+
+16. service_core_userprofile_id()
+
+query16 = userprofiles/2/
+path16 = 
+data16 = default_location:Bangalore, default_context:1, current_context:1, language:en, id:2, default_currency:USD, job_title:Admin, user:2, account:40
+----------------------------
+
+17. service_core_verticals()
+
+query17 = verticals/?limit=1&offset=0
+path17 = results[0]
+data17 = vertical_name:Automotive, updated_by:null, created_by:draup, url:https://dev-platform.draup.com/service/core/verticals/1/
+-----------------------------
+
+18. service_core_verticals_id()
+
+query18 = verticals/1/
+path18 = 
+data18 = vertical_name:Automotive, updated_by:null, created_by:draup, url:https://dev-platform.draup.com/service/core/verticals/1/
+-----------------------------
+
+19. service_core_vertical_name
+
+query19 = verticals/Automotive/subverticals
+path19 = 
+data19 = Component Manufacturer / Tier 1, OEM, ADAS, Powertrain, Chassis, Infotainment Systems, Tyres, Safety Systems
+------------------------------

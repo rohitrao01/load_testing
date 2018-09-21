@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" verbose="1" allow-return-values="true">
+<listeners>
+  <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+  </listeners>
+ 
+   
+  <test name="ApiTesting">
+    <classes>
+    	
+    	<class name="draup.token_gen"/>
+   <!-- 	<class name="draup.contenders"/>
+    	<class name="draup.rolodex_filter"/>
+    	<class name="draup.rolodex"/>
+    	<class name="draup.service_core"/>
+    	<class name="draup.universe"/>
+    	-->
+    	
+    </classes>
+    </test> 
+</suite>
+  
+  
+

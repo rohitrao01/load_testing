@@ -1,0 +1,21 @@
+base_url = https://qa-platform.draup.com
+res_common = /service/contenders/
+-----------------------------------------
+
+1. get_contenders_overview()
+
+res_contenders_overview = overview/
+body_text1 = Amazon
+------------------------------------------
+
+2. get_contenders_name_suggestion()
+
+res_contenders_name_suggestion = names/suggestions/Yahoo/
+body_text2 = Yahoo
+------------------------------------------
+
+3. contenders_comparison
+
+res_contenders_comparison = comparison/
+body text3 = 
+------------------------------------------

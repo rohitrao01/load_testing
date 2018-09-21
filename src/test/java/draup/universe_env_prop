@@ -1,0 +1,69 @@
+base_url = https://qa-platform.draup.com
+
+res_common = /service/universe/
+-------------------------------------------------------
+
+1. get_universe_disruption()
+
+res_universe_disruption = disruptions/Ford/
+body_text1 = Ford Motor Company
+-------------------------------------------------------
+
+2. get_universe_filters_accountsforsignal
+
+res_universe_filters_accountsforsignal = filters/accountsforsignals
+body_text2 = Aisin Seiki, BMW, Bridgestone, BYD Auto, Continental AG
+------------------------------------------------------
+
+3. get_universe_hqlocations
+
+res_universe_hqlocations = filters/hqlocations
+body_text3 = Ahmedabad, APAC, Arcadia, Austria, Avezzano
+------------------------------------------------------
+
+4. get_universe_rndlocation
+
+res_universe_rndlocation = filters/rndlocations
+body_text4 = Ahmedabad, APAC, Arcadia, Austria, Avezzano
+-------------------------------------------------------
+
+5. get_universe_signaltype
+
+res_universe_signaltype = filters/signaltypes
+body_text5 = Executive Movement, Layoff, Investment, Hiring, Merger & Acquisition
+-------------------------------------------------------
+
+6. get_universe_sp_partners
+
+res_universe_sp_partners = filters/sp_partners
+body_text6 = HCL, Infosys, TCS, Wipro
+------------------------------------------------------
+
+7. get_universe_verticals
+
+res_universe_verticals = filters/verticals
+body_text7 = Automotive, Consumer Software, Enterprise Software
+-------------------------------------------------------
+
+8. get_universe_financials()
+
+res_universe_financials = financials/Ford/
+body_text8 = Ford Motor Company
+-------------------------------------------------------
+
+9. get_universe_globalization
+
+res_universe_globalization = globalization/Ford/
+body_text9 = Ford Motor Company
+-------------------------------------------------------
+
+10. get_universe_opportunities
+
+res_universe_opportunities = opportunities/Ford/
+body_text10 = Ford Motor Company
+------------------------------------------------------
+
+11. get_universe_outsourcing
+
+res_universe_outsourcing = outsourcing/Ford/
+body_text11 = Ford Motor Company

@@ -1,0 +1,307 @@
+base_url = https://qa-platform.draup.com
+
+res_common = /service/accounts/1
+-------------------------------------------
+--1 method -- get_accounts_all_signal()
+
+res_accounts_all_signal = /service/accounts/allsignals
+data1 = Austria
+
+------------------------------------------------------------------------
+
+--2 method -- get_account_signal_types()
+
+res_accounts_signal_types = /service/accounts/signaltypes
+body_text2 = signal_type:Executive Movement
+------------------------------------------------------------------------
+
+--3 method -- get_account_name_suggestion()
+
+res_accounts_name_suggestions = /service/accounts/names/suggestions/ford/
+body_text3 = Ford Motor Company
+
+------------------------------------------------------------------------
+
+--4 -- method -- get_account_location_suggestion()
+
+res_account_location_suggestions = /service/accounts/locations/HQ/suggestions/Austria
+body_text4 = Austria
+------------------------------------------------------------------------
+
+--5 -- method -- get_service_accounts_financials_revenue_by_businessunits()
+
+revenue_by_businessunits_id = /service/accounts/1/financials/revenue_by_businessunits
+body_text5 = ARTIFICIAL INTELLIGENCE AND RESEARCH
+
+----------------------------------------------------------------------------
+
+--6 -- method -- get_accounts_financials_revenue_by_region()
+
+revenue_by_region_id = /service/accounts/1/financials/revenue_by_region
+body_text6 = EMEA
+
+---------------------------------------------------------------------------
+
+--7 --method -- get_accounts_financials_revenue_rnd_timelines()
+
+revenue_rnd_timelines_id = /service/accounts/1/financials/revenue_rnd_timelines
+body_text7 = 40.0, 52.0, 13000.0, 123005.0
+
+-----------------------------------------------------------------------------
+
+--8 --method --get_account_financials_summary()
+
+financial_summary_id = 1/financials/summary
+body_text8 = valuetype:currency, symbol:USD, period:2017, value:52.0, currencyUnit:million
+
+-----------------------------------------------------------------------------
+
+--9 --method -- get_account_globalization_filter_locations()
+
+globalization_filter_location_id = 1/globalization/filters/locations
+body_text9 = [Portland, Germany, Singapore, Stuttgart Area, EMEA, Zurich, Timis County, Bucharest, Greater New York City Area, Belgrade, Cambridge, United Kingdom, United States, Shanghai Area, Leicester, Pune Area, Taipei City, Israel, Greater Seattle Area, Haifa, Taiwan, Estonia, Beijing Area, Lisbon Area, APAC, Stockholm, Birmingham, United Kingdom, Serbia, Tallinn, Bengaluru Area, Santa Barbara, Portugal, Oslo, Washington D.C. Metro Area, Romania, Guildford, United Kingdom, China, Republic of Ireland, London, United Kingdom, United Kingdom, Sweden, India, Switzerland, North Americas, Hyderabad Area, Norway, Dublin]
+
+-----------------------------------------------------------------------------
+
+--10 --method -- get_account_globalization_rnd_map()
+
+globalization_rnd_map_id = 1/globalization/rnd/map
+body_text10 = Headquarter
+
+----------------------------------------------------------------------------
+
+--11 --method -- get_account_globalization_rnd_sites_center()
+
+globalization_rnd_sites_center_id = 1/globalization/rnd/sites/1/centers/
+body_text11 = tableDefId:ACCOUNTS_GLOBALIZATION_SITE_CENTERS, resultCount:2, rowData:[[Future Social Experience (FUSE) Labs, Ahmedabad, Development of real-time and media-rich applications and services that add value to existing products, or could be released on thieir own.], [Microsoft Research Redmond, Ahmedabad, This facility is mainly working on Data management, E science, Computer architecture, Human Computer Interaction, Machine Learning, Graphics, Multimedia, Security, Information Retrieval Speech and Natural Language, Operating System, Distributed Computing and Networking.]], columnDefs:[[headerName:center_name, field:center_name, width:200, sort:DESC], [headerName:city, field:city, width:150], [headerName:description, field:description, width:480
+
+-------------------------------------------------------------------------------
+
+--12 --method -- get_account_globalization_rnd_sites_details()
+
+globalization_rnd_sites_details_id = 1/globalization/rnd/sites/1/details/
+body_text12 = COMPANY_1_SITE_1_BU_1, COMPANY_1_SITE_1_BU_2
+
+-------------------------------------------------------------------------------
+
+--13 --method -- get_accounts_globalization_rnd_sites_summary()
+
+globalization_rnd_sites_summary_id = 1/globalization/rnd/sites/1/summary/
+body_text13 = valuetype:change-indicator, period:, change:300, value:600
+------------------------------------------------------------------------------
+
+--14 --method -- get_account_globalization_rnd_topography()
+
+globalization_rnd_topography_id  = 1/globalization/rnd/topography
+body_text14 = countryCode:US, name:Greater Seattle Area, lon:-122.158, lat:47.7125
+------------------------------------------------------------------------------
+
+--15 --method -- get_hiring_activity_analysis_most_in_demand_skills()
+
+hiring_activity_analysis_most_in_demand_skills_id = 1/hiring/activity/analysis/most_in_demand_skills
+body_text15 = Self-motivation, determination , Content Skills
+
+-----------------------------------------------------------------------------
+
+--16 --method -- get_account_hiring_activity_filter_location()
+
+hiring_activity_filter_location_id = 1/hiring/activity/filters/locations
+body_text16 = Kista
+
+-----------------------------------------------------------------------------
+
+--17 --method -- get_account_hiring_activity_filters_subverticals
+
+hiring_activity_filters_subverticals_id = 1/hiring/activity/filters/subverticals
+body_text17 = [Application Development Software, Application Platforms, Content Applications, Customer Relationship Management, Engineering Applications, Enterprise Resource Management Applications, Quality and Life-Cycle Tools, Security Software, Storage Software, Structured Data Management Software, System Management Software, System Software]
+
+-----------------------------------------------------------------------------
+
+--18 -- method -- get_account_hiring_job_listings
+
+account_hiring_job_listings_id = 1/hiring/job-listings/
+body_text18 = The treasurer position is responsible for corporate liquidity, investments, and risk management related to the companys financial activities
+
+------------------------------------------------------------------------------
+
+--19 --method -- get_account_hiring_job_listing_job_id
+
+hiring_job_listing_job_id_id = 1/hiring/job-listings/1/
+body_text19 = [[job-description:Auditors are specialists who review the accounts of companies and organisations to ensure the validity and legality of their financial records. They can also act in an advisory role to recommend possible risk aversion measures and cost savings that could be made., job-title:Auditor, job-skills:[Self-motivation, determination ], job-posting-date:2017-06-08T00:00:00, job-location:Ahmedabad, India, job-posting-status:OPEN, subverticals:Engineering Applications]]
+
+-------------------------------------------------------------------------------
+
+--20 --method -- account_info
+
+account_info_id = 1/info
+body_text20 = 1
+
+-------------------------------------------------------------------------------
+
+--21 --method -- get_account_landingpage_business_units
+
+landingpage_business_units = 1/landingpage/businessunits
+body_text21 = [product_line:Bing, product_group:SALES & ADVERTISING, business_unit:ARTIFICIAL INTELLIGENCE AND RESEARCH]
+
+-------------------------------------------------------------------------------
+
+--22 --method -- get_accounts_landingpage_details
+
+landingpage_details_id = 1/landingpage/details
+body_text22 = [id:1, Name:Kevin Jose], [id:2, Name:Achal Gupta], [id:3, Name:Matty Reglar], [id:4, Name:Anselma Sanpher]
+
+--------------------------------------------------------------------------------
+
+--23 --method -- get_account_landingpage_summary
+
+landingpage_summary_id = 1/landingpage/summary
+body_text23 = valuetype:change-indicator, period:, change:8.8, value:10.0
+
+---------------------------------------------------------------------------------
+
+--24 --method -- get_account_outsourcing_accounts
+
+account_outsourcing_accounts_id = 1/outsourcing/accounts
+body_text24 = HCL
+
+--------------------------------------------------------------------------------
+
+--25 --method -- get_account_outsourcing_analysis_filters_locations
+
+outsourcing_analysis_filters_locations_id = 1/outsourcing/analysis/filters/locations
+body_text25 = Milan
+
+-------------------------------------------------------------------------------
+
+--26 -- method -- get_account_outsourcing_analysis_filters_subverticals
+
+outsourcing_analysis_filters_subverticals_id = 1/outsourcing/analysis/filters/subverticals
+body_text26 = [Powertrain, Infotainment Systems, Tyres, Chassis,Infotainment Systems, ADAS, Chassis, Safety Systems]
+
+--------------------------------------------------------------------------------
+
+--27 --method -- get_account_outsourcing_opindex_by_loc
+
+outsourcing_opindex_by_loc = 1/outsourcing/analysis/opindex_by_locations
+body_text27 = Portland, Beijing Area, Lisbon Area, Singapore, Stuttgart Area, Zurich, Stockholm, Birmingham, United Kingdom, Tallinn, Timis County, Bengaluru Area, Santa Barbara, Bucharest, Oslo, Washington D.C. Metro Area, Greater New York City Area, Belgrade, Guildford, United Kingdom, Cambridge, United Kingdom, London, United Kingdom, Shanghai Area, Leicester, Pune Area, Taipei City, Greater Seattle Area
+
+--------------------------------------------------------------------------------
+
+--28 --method -- get_account_outsourcing_opindex_by_subvertical
+
+outsourcing_opindex_by_subvertical_id = 1/outsourcing/analysis/opindex_by_subverticals
+body_text28 = Component Manufacturer / Tier 1, ADAS
+
+--------------------------------------------------------------------------------
+
+--29 --method -- get_account_outsourcing_size_by_location
+
+outsourcing_size_by_location_id = 1/outsourcing/analysis/size_by_locations
+body_text29 = Ahmedabad, Arcadia, Fuzhou, Milan
+
+--------------------------------------------------------------------------------
+
+--30 --method -- get_account_outsourcing_size_by_service_provider
+
+outsourcing_size_by_service_provider_id = 1/outsourcing/analysis/size_by_service_providers
+body_text30 = HCL, TCS
+
+---------------------------------------------------------------------------------
+
+--31  --method  -- get_account_outsourcing_size_by_subverticals
+
+outsourcing_size_by_subverticals_id = 1/outsourcing/analysis/size_by_subverticals
+body_text31 = ADAS
+
+---------------------------------------------------------------------------------
+
+--32 --method -- get_acccount_outsourcing_summary
+
+acccount_outsourcing_summary_id = 1/outsourcing/summary
+body_text32 = valuetype:text, period:2015 Q4, value:4.1
+
+----------------------------------------------------------------------------------
+
+--33 --method -- get_account_partnership_companies
+
+account_partnership_companies_id = 1/partnerships/companies
+body_text33 = [2016, Amazon, null, null]
+
+-----------------------------------------------------------------------------------
+
+--34 --method -- get_accounts_partnerships_investments
+
+accounts_partnerships_investments_id = 1/partnerships/investments
+body_text34 = [comparator:dateComparator, headerName:investment_date, field:investment_date, width:110, sort:DESC]
+
+-----------------------------------------------------------------------------------
+
+--35 --method -- get_account_investment_summary
+
+account_investment_summary_id = 1/partnerships/investments/summary
+body_text35 = [values:[[valuetype:change-indicator, period:2017 Q2, change:0.0, value:5.9]], icon:null, label:disruption_index]
+
+-----------------------------------------------------------------------------------
+
+--36 --method -- get_account_partnership_investment_summary
+
+account_partnership_investment_summary_id = 1/partnerships/investments/summary
+body_text36 = [values:[[valuetype:change-indicator, period:2017 Q2, change:0.0, value:5.9]], icon:null, label:disruption_index]
+
+-----------------------------------------------------------------------------------
+-- 37 -- method -- get_account_partnership_jointventure
+
+account_partnership_jointventure_id = 1/partnerships/jointventures
+body_text37 = 2016, Volvo,BMW,Nissan,Toyota, Avanade, Avanade,C&M, Ahmedabad,Austria
+
+-----------------------------------------------------------------------------------
+
+--38 --method -- get_account_partnership_merger
+
+account_partnership_merger_id = 1/partnerships/mergers
+body_text38 = Component Manufacturer / Tier 1, OEM, Customer Relationship Management, Supply Chain Management Applications
+
+-----------------------------------------------------------------------------------
+
+--39 --method --get_account_partnership_merger_summary
+
+account_partnership_merger_summary_id = 1/partnerships/mergers/summary
+body_text39 = valuetype:text, period:Last 12 months, value:6
+
+-----------------------------------------------------------------------------------
+
+--40 -- method get_account_partnership_universities
+
+account_partnership_universities_id = 1/partnerships/universities
+body_text40 = 2016, University of Montreal, R&D, Informatics
+
+----------------------------------------------------------------------------------
+
+--41 --method get_accounts_signal
+
+accounts_signal_id = 1/signals
+body_text41 = Sakura
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

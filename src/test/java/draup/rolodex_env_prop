@@ -1,0 +1,137 @@
+base_url = https://qa-platform.draup.com
+res_common = /service/rolodex/executives/
+---------------------------------------------------------
+
+--1. get_rolodex_ui_filter_bufunc
+
+res_rolodex_ui_filter_bufunc = ui_filter/business_functions
+body_text1 = Technology, HR, Sales, Marketing
+----------------------------------------------------------
+
+--2. get_rolodex_ui_filter_company
+
+res_rolodex_ui_filter_company = ui_filter/company
+body_text2 = Aisin Seiki, Amazon, BMW, Bridgestone, BYD Auto
+-----------------------------------------------------------
+
+--3. get_rolodex_ui_filter_level_in_org
+
+res_rolodex_ui_filter_level_in_org = ui_filter/level_in_org
+body_text3 = CEO, C-Officers, Senior Leadership
+-----------------------------------------------------------
+
+--4.  get_rolodex_ui_filter_locations
+
+res_rolodex_ui_filter_locations = ui_filter/account/1/locations
+body_text4 = Portland, Beijing Area, Lisbon Area, Singapore, Stuttgart Area
+------------------------------------------------------------
+
+--5. get_rolodex_ui_filters_subverticals
+
+res_rolodex_ui_filters_subverticals = ui_filter/1/subverticals
+body_text5 = Security Software, Tyres
+------------------------------------------------------------
+
+--6. get_rolodex_associations
+
+res_rolodex_associations = 1/associations/
+body_text6 = association_type:Board Member, title:Board Member, account:Pinterest
+------------------------------------------------------------
+
+--7. get_rolodex_experience
+
+res_rolodex_experience = 1/experience/
+body_text7 = executive_id:1, account_id:1
+------------------------------------------------------------
+
+--8. get_rolodex_knowledge_wall
+
+res_rolodex_knowledge_wall = 1/knowledge_wall/
+body_text8 = Big Data, Python, Data Bricks, Supervised Learning, NeuralNet
+------------------------------------------------------------
+
+--9. get_rolodex_news
+
+res_rolodex_news = 1/news/
+body_text9 = executive:1, news_source:INDIA TODAY,executive_news_id:1
+-------------------------------------------------------------
+
+--10. get_rolodex_outsourcing
+
+res_rolodex_outsourcing = 1/outsourcing/
+body_text10 = size:120, header:Artificial Intelligence and Research
+------------------------------------------------------------
+
+--11. get_rolodex_executives
+
+res_rolodex_executives = /
+body_text11 = Dottie Shepley
+------------------------------------------------------------
+
+--12. get_rolodex_names_suggestion
+
+res_rolodex_names_suggestion = names/suggestions/achal/
+body_text12 = deal_size_influence:LOW, location_class:Satellite, bio:CTO of company and SVP of FMC, executive_name:Achal Gupta, linkedin_handle:AchalL
+------------------------------------------------------------
+
+--13. get_rolodex_exited_executives
+
+res_rolodex_exited_executives = 1/exited_executives/
+body_text13 = deal_size_influence:LOW, location_class:Satellite, bio:SVP of Nissan, executive_name:Sreeraj, linkedin_handle:SreerajL
+------------------------------------------------------------
+
+--14. get_rolodex_hired_executive
+
+res_rolodex_hired_executive = 1/hired_executives/
+body_text14 = deal_size_influence:HIGH, location_class:Hub, bio:CTO of company, executive_name:Kevin Jose, linkedin_handle:KevinL
+-------------------------------------------------------------
+
+--15. get_rolodex_key_executives
+
+res_rolodex_key_executives = 1/key_executives/
+body_text15 = executive_id:1, executive_logo_url:https://media.licdn.com/media/p/4/000/167/1ae/1e8152e.jpg, deal_size_influence:HIGH, location_class:Hub, bio:CTO of company, executive_name:Kevin Jose, linkedin_handle:KevinL
+--------------------------------------------------------------
+
+--16. get_rolodex_executive_about()
+
+res_rolodex_executive_about = 1/about/
+body_text16 = Kevin is extremely positive and optimistic. He is a rather dynamic individual who is slightly sensitive. Occasionally passionate and impulsive, he usually does not hesitate from expressing himself freely. He is competitive and challenging as well as frank and believes in speaking his mind. He is slightly emotional and judgmental.
+--------------------------------------------------------------
+
+--17.get_rolodex_bio
+
+res_rolodex_bio = 1/bio/
+body_text17 = CTO of company
+---------------------------------------------------------------
+
+--18. get_rolodex_blog
+
+res_rolodex_blog = 1/blogs/
+body_text18 = This is blog 1
+---------------------------------------------------------------
+
+--19. get_rolodex_education
+
+res_rolodex_education = 1/education/
+body_text19 = end_date:2019-01-01, executive_id:1, university:MIT, course:MS, university_logo:null, executive_education_id:1, course_description:MS in computer science, start_date:2017-01-01
+---------------------------------------------------------------
+
+--20. get_rolodex_influencer
+
+res_rolodex_influencer = 1/influencers/
+body_text20 = executive:Achal Gupta, executive_id:2, interaction_affinity_level_percentage:30
+---------------------------------------------------------------
+
+--21. get_rolodex_interest
+
+res_rolodex_interest = 1/interests/
+body_text21 = Emerging Markets, RnD, Globalization
+
+
+
+
+
+
+
+
+
